@@ -4,6 +4,7 @@ using OrbitHomeCinema.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,7 +34,19 @@ namespace OrbitHomeCinema.Data.Repositories
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            return await BaseQuery.ToListAsync();
+           return await _set.ToListAsync();
+        }
+
+        public async Task<IEnumerable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> predicate)
+        {
+            return await _set.Where(predicate).ToListAsync();
+        }
+
+        public async Task<IEnumerable<TEntity>> GetPaginatedAsync(int pageNumber, int pageSize)
+        {
+           return await _set.Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
         }
 
         public async Task<TEntity> GetByIdAsync(Guid id)
