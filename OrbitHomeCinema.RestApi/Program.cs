@@ -1,4 +1,6 @@
 
+using OrbitHomeCinema.Data;
+
 namespace OrbitHomeCinema.RestApi
 {
     public class Program
@@ -8,7 +10,8 @@ namespace OrbitHomeCinema.RestApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            var connectionString = builder.Configuration.GetConnectionString("HomeCinemaDb");
+            builder.Services.AddData(connectionString!);
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

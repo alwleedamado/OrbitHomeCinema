@@ -15,26 +15,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.Android", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3DA99C4E-89E3-4049-9C22-0A7EC60D83D8}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitHomeCinema.Core", "OrbitHomeCinema.Core\OrbitHomeCinema.Core.csproj", "{F36D7906-F807-4ECC-ABF3-1376B69C1FDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.Core", "OrbitHomeCinema.Core\OrbitHomeCinema.Core.csproj", "{F36D7906-F807-4ECC-ABF3-1376B69C1FDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitHomeCinema.RestApi", "OrbitHomeCinema.RestApi\OrbitHomeCinema.RestApi.csproj", "{DA23807F-37B4-41F2-A70C-2D1D8D9B0A69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.RestApi", "OrbitHomeCinema.RestApi\OrbitHomeCinema.RestApi.csproj", "{DA23807F-37B4-41F2-A70C-2D1D8D9B0A69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitHomeCinema.Media", "OrbitHomeCinema.Media\OrbitHomeCinema.Media.csproj", "{03FBA8DD-5AA0-4956-B46A-9F56BB0DF481}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.Media", "OrbitHomeCinema.Media\OrbitHomeCinema.Media.csproj", "{03FBA8DD-5AA0-4956-B46A-9F56BB0DF481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitHomeCinema.Data", "OrbitHomeCinema.Data\OrbitHomeCinema.Data.csproj", "{802D37BD-1CEC-46E5-A38E-E183FB2D8B51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.Data", "OrbitHomeCinema.Data\OrbitHomeCinema.Data.csproj", "{802D37BD-1CEC-46E5-A38E-E183FB2D8B51}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{6E0842FB-16A6-4235-8A9F-34CF40214BA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{F62428C1-A677-4340-BFD6-8D39C69C09C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitHomeCinema.Crawling", "OrbitHomeCinema.Crawling\OrbitHomeCinema.Crawling.csproj", "{F89BD95B-381D-4DDC-B56E-6F1FEFBB78CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.Crawling", "OrbitHomeCinema.Crawling\OrbitHomeCinema.Crawling.csproj", "{F89BD95B-381D-4DDC-B56E-6F1FEFBB78CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitHomeCinema.Schadulers", "OrbitHomeCinema.Schadulers\OrbitHomeCinema.Schadulers.csproj", "{06AF8649-42DF-4D5A-BECE-DD5EA57791B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.Schadulers", "OrbitHomeCinema.Schadulers\OrbitHomeCinema.Schadulers.csproj", "{06AF8649-42DF-4D5A-BECE-DD5EA57791B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitHomeCinema.Downloaders", "OrbitHomeCinema.Downloaders\OrbitHomeCinema.Downloaders.csproj", "{46174238-EFBE-4654-BD32-E5B0D8C92B1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrbitHomeCinema.Downloaders", "OrbitHomeCinema.Downloaders\OrbitHomeCinema.Downloaders.csproj", "{46174238-EFBE-4654-BD32-E5B0D8C92B1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

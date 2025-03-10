@@ -5,12 +5,35 @@
              xmlns:vm="clr-namespace:OrbitHomeCinema.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="OrbitHomeCinema.Views.MainView"
-             x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
+			 x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
-
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<vm:MainViewModel />
+	</Design.DataContext>
+	<StackPanel>
+		
+		<ItemsControl ItemsSource="{Binding Items}">
+			<ItemsControl.Styles>
+				<Style Selector="Button">
+					<Setter Property="Margin" Value="10"/>
+				</Style>
+			</ItemsControl.Styles>
+			<ItemsControl.ItemsPanel>
+				<ItemsPanelTemplate>
+					<WrapPanel />
+				</ItemsPanelTemplate>
+			</ItemsControl.ItemsPanel>
+			<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<Button Command="{Binding Open}">
+					<Grid RowDefinitions="Auto,Auto">
+						<Image Height="48" Width="148" Source="/Assets/avalonia-logo.ico"/>
+						<Label HorizontalAlignment="Center" Grid.Row="1" Content="{Binding Name}" />
+					</Grid>
+					</Button>
+				</DataTemplate>
+			</ItemsControl.ItemTemplate>
+		</ItemsControl>
+	</StackPanel>
 </UserControl>
